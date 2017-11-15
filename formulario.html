@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<h1> Formulario de ingreso del estudiante </h1>
+
+<form action="/cgi-bin/revisarFormulario.cgi" method="post">
+
+<p> Nombre: <input type=text name="nombre"></p>
+<p> Apellidos: <input type=text name="apellido"></p>
+<p> Email: <input type=text name="email"></p>
+
+Selecciona tu edad <select name="edad">
+<option value="18-20">18-20</option>
+<option value="20-24">20-24</option>
+<option value="24-28">24-28</option>
+<option value="28+">28+</option>
+</select><br><br>
+
+Selecciona tu ciclo <select name="ciclo">
+<option value="1daw">1ro DAW</option>
+<option value="2daw">2do DAW</option>
+</select>
+<p> Estudios anteriores: </p>
+<textarea name="otros" rows=5 cols=80>
+</textarea>
+<br><br>
+<input type=submit value="Enviar">
+</form>
+</body>
+</html>
